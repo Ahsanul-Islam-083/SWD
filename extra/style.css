@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
-.hero{
+
+.hero {
     background-image: url("Image/cow.jpg");
     height: 100vh;
     background-position: bottom center;
     background-size: cover;
+    clip-path: polygon(100% 1%, 100% 85%, 50% 100%, 0 85%, 0 0);
 }
-.hero h1{
+
+.hero h1 {
     color: azure;
     font-size: 100px;
     text-align: center;
@@ -21,28 +24,52 @@
     word-spacing: 20px;
     letter-spacing: 9px;
 }
-.easy{
+
+.easy, #cow-variants {
     width: 80%;
     margin: 60px auto;
-    border: 10px groove rgb(250, 96, 96);
-    background-color: rgb(184, 251, 229);
+    /* border: 10px groove rgb(250, 96, 96);
+    background-color: rgb(184, 251, 229); */
     padding: 40px;
+    background: linear-gradient(15deg,pink,rgb(30, 0, 255),rgb(255, 0, 0));
 }
-.easy h2{
-text-align: center;
-font-size: 46px;
-border-bottom: 6px solid yellow;
-margin: 45px;
-padding: 34px;
+
+.easy h2, #cow-variants h2 {
+    text-align: center;
+    font-size: 46px;
+    border-bottom: 6px solid yellow;
+    border-radius: 50px;
+    margin: 45px;
+    padding: 34px;
 }
-.easy p{
+
+.easy p {
     font-size: 24px;
     line-height: 2em;
 }
-.easy p .imp{
+
+.easy p .imp {
     font-size: 2em;
     background-color: yellow;
     display: inline-block;
     width: 600px;
     text-align: center;
+}
+.cow-images{
+display: flex;
+flex-direction: row;
+gap: 20px;
+flex-wrap: wrap;
+/* justify-content: space-between; */
+justify-content: space-around;
+}
+.cow-images div{
+    width: 300px;
+    height: 244px;
+    object-fit: contain;
+}
+.cow-images img{
+    width: 100%;
+    height: 244px;
+    object-fit: cover;
 }
