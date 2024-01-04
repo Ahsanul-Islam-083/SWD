@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Height,weight,borders and background</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+                p{
+            font-family:"Sofia", sans-serif;
+            font-size: 50px; /* 1 pixel = (1 / 96) inches */
+            line-height: 2.3em;
+        }
+
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+         /* border-width: 4px;
+            border-color: green;
+            border-style: solid;  */
+
+/* we can combined the three lines of the above with border like below             */
+
+            border: 9px solid green;
+            border-radius: 9px;
+        }
+        
+        #secondPara{
+            background-color: rgb(106, 36, 247);
+            height: 130px;
+            width: 5oopx;
+            border-top: 8px solid violet;
+            border-bottom: 8px solid rgb(130, 238, 168);
+            border-left: 8px solid orangered;
+            border-right: 8px solid rgb(7, 7, 7);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #thirdPara{
+            color: rgb(144, 195, 246);
+            height: 2000px;
+            width: 3500px;
+            border: 4px solid brown;
+            background-image: url('https://dlcdnrog.asus.com/rog/media/1554200908315.webp');
+            background-repeat: no-repeat;   /* repeat-x and repeat-y will make the img repeat on X and Y axis */
+            /* background-position: 300px 100px; */
+            /* background-position: center center; */
+            /* background-position: top center; */
+            /* background-position: top right; */
+            /* background-position: top left; */
+            background-position: center left;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading.</h3>
+    <p id="firstPara">This is a paragraph.</p>
+
+    <h3>This is second heading.</h3>
+    <p id="secondPara">This is my second paragraph.</p>
+
+    <h3>This is third heading.</h3>
+    <p id="thirdPara">This is my third paragraph.</p>
+</body>
+</html>

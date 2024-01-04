@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clolors in CSS</title>
+    <style>
+        #firstPara{
+            color: red; /*color by name*/
+        }
+
+        #secondPara{
+            color: rgb(246, 166, 61); /*color by rgb() value*/
+        }
+
+        #thirdPara{
+            color: #ffffff; /*color by hex value*/
+            background-color: #e004af;
+        }
+        #fourthPara{
+            color: rgba(253, 0, 0, 0.558);
+        }
+        span{
+            color: hsl(235, 100%, 50%);
+        }
+
+    </style>
+</head>
+<body>
+     <!-- https://codepen.io/web-dot-dev/pen/ZELGraM -->
+    <h4>This is my first box</h4>
+    <p id="firstPara">This paragraph from first box</p>
+    <h4>This is my second box</h4>
+    <p id="secondPara">This paragraph from second box</p>
+    <h4>This is my third box</h4>
+    <p id="thirdPara">This paragraph from third box</p>
+    <p id="fourthPara">Color can be represented in:
+        <ol>
+            <li>Color Keywords</li>
+            <li>Hex color Code</li>
+            <li>RGB</li>
+            <li>RGBA</li>
+            <li>HSL</li>
+        </ol>
+    </p>
+    <span>This is hsl</span>
+</body>
+</html>

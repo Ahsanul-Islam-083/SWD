@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+
+        <label for="name">Name: </label>
+        <div><input type="text" name="myName" id="name" placeholder="Enter your name" autofocus></div>
+
+        <br> <!--But this tag is not recommended -->
+        <label for="role">Role: </label>
+        <div><input type="text" name="myRole" id="role" placeholder="Enter your role"></div>
+
+        <br> <!--But this tag is not recommended -->
+        <label for="email">Email: </label>
+        <div><input type="email" name="myEmail" id="email" placeholder="Enter your email"></div>
+
+        <br> <!--But this tag is not recommended -->
+        <label for="date">Date: </label>
+        <div><input type="date" name="myDate" id="date"></div>
+
+        <br> <!--But this tag is not recommended -->
+        <label for="bonus">Bonus: </label>
+        <div><input type="number" name="myBonus" id="bonus"></div>
+
+        <br> <!--But this tag is not recommended -->
+        <label for="checkbox">Are you eligible?: </label>
+        <div><input type="checkbox" name="myEligibility" id="checkbox" checked></div>
+
+        <br> <!--But this tag is not recommended -->
+        <label for="male">Gender: </label>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="myGender" id="male" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="myGender" id="female" value="female">
+
+            <label for="other">Other</label>
+            <input type="radio" name="myGender" id="other" value="other">
+
+        </div>
+        <br> <!--But this tag is not recommended -->
+        <label for="yourself">Write about yourself:
+        </label>
+        <div>
+            <br><textarea name="myText" id="yourself" cols="90" rows="10" placeholder="Write here..."></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind" selected>Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+
+        <br> <!--But this tag is not recommended -->
+        <div><input type="reset" value="Reset Now">
+            <input type="submit" value="Submit Now">
+        </div>
+
+    </form>
+</body>
+
+</html>

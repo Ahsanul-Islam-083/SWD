@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        p {
+            border: 2px solid red;
+        }
+
+        /* Id selector */
+        #firstPara {
+            color: green;
+        }
+
+        /* Class selector */
+        .bgBlue {
+            color: rgb(240, 118, 19);
+        }
+
+        /* Grouping selector */
+        footer,
+        span {
+            background-color: pink;
+        }
+
+        /* child Selectors */
+        div>strong {
+            /* Here strong is a direct child of div tag */
+            color: green;
+            border: 2px solid red;
+        }
+
+        /* Decendemt Selectors */
+        div main {
+            border: 3px solid hotpink;
+            border-radius: 4px;
+        }
+
+        /* Universal Selectors */
+        * {
+            padding: 4px;
+            margin: 9px;
+        }
+        /* Pseudo Selectors */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        p:first-child{
+            background-color: rgb(9, 229, 156);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">THis is a simple paragraph to demonstrate css Selectors.</p>
+    <p id="secondPara" class="redElement bgBlue">THis is another simple paragraph to demonstrate css Selectors.</p>
+    <div>
+        <p>THis is yet another simple paragraph to demonstrate css Selectors.</p>
+        <span>This is span.</span>
+        <footer>This is footer.</footer>
+        <strong>This is a strong.</strong>
+        <article>
+            <main>
+                This is main
+            </main>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.facebook2.com">Go to Facebook</a>
+    </div>
+    <div class="selector">
+        <p>I am one</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        :root{
+            --color: rgb(132, 0, 255);
+            --seccolor: rgba(178, 244, 180, 0.43);
+            --textcolor: rgb(206, 239, 244);
+            --hovcolor: red;
+        }
+        body{
+            background-color: var(--seccolor);
+        }
+        .nav{
+            background-color: var(--color);
+            border-radius: 33px;
+            
+        }
+        ul{
+            /* display: flow-root; */
+            overflow: auto;
+        }
+        li{
+            display: flex;
+            list-style: none;
+            margin: 14px 23px;
+            padding-top: 2px;
+            float: left;
+            padding: 10px;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: var(--textcolor);
+            padding: 3px 3px;
+        }
+        .nav ul li a:hover{
+            color: var(--hovcolor);
+        }
+        .searchbox{
+            float: right;
+            padding: 27px 57px;
+            color: var(--textcolor);
+            
+        }
+        .nav input{
+            border: 2px solid gray;
+            border-radius: 13px;
+            padding: 3px 18px;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="#">Contact Us</a></li>
+         <div class="searchbox">
+             <input type="text"  name="searchbox" id="searchbox" placeholder="search this website">
+            </div>
+        </ul>
+    </header>
+</body>
+</html>

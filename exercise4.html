@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        :root {
+            --color: rgb(132, 0, 255);
+            --seccolor: rgba(178, 244, 180, 0.43);
+            --textcolor: rgb(206, 239, 244);
+            --hovcolor: red;
+        }
+
+        .nav {
+            /* height: 83px; */
+            position: sticky;
+            top: 0px;
+            background-color: var(--color);
+            border-radius: 33px;
+
+        }
+
+        ul {
+            /* display: flow-root; */
+            overflow: auto;
+        }
+
+        li {
+            display: flex;
+            list-style: none;
+            margin: 14px 23px;
+            padding-top: 2px;
+            float: left;
+            padding: 10px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: var(--textcolor);
+            padding: 3px 3px;
+        }
+
+        .nav ul li a:hover {
+            color: var(--hovcolor);
+        }
+
+        .searchbox {
+            float: right;
+            padding: 27px 57px;
+            color: var(--textcolor);
+        }
+
+        .nav input {
+            border: 2px solid gray;
+            border-radius: 13px;
+            padding: 3px 18px;
+        }
+
+        .boxes {
+            display: flex;
+            overflow: auto;
+            margin: 12px 34px;
+            text-align: center;
+            /* height: 555px; */
+            /* width: 100vw; */
+            border: 2px solid var(--seccolor);
+            background-color: var(--seccolor);
+        }
+
+        .box1 {
+            box-shadow: 9px 9px 7px rgb(164, 118, 118);
+            background-color: rgb(253, 216, 124);
+            /* box-sizing: border-box; */
+            height: 400px;
+            width: 620px;
+            border: 2px solid var(--hovcolor);
+            margin: 64px 84px;
+        }
+
+        .box2 {
+            box-shadow: 9px 9px 7px rgb(164, 118, 118);
+            background-color: aqua;
+            /* box-sizing: border-box; */
+            float: right;
+            height: 400px;
+            width: 620px;
+            border: 2px solid var(--hovcolor);
+            margin: 64px 84px;
+        }
+
+        .welcome {
+            background-color: black;
+            padding: 12px;
+        }
+
+        .welcome h2 {
+            border: 1px solid gray;
+            background-color: rgb(89, 179, 95);
+            color: var(--textcolor);
+            text-align: center;
+            margin: 68px;
+            padding: 33px 55px;
+            border-radius: 33px;
+        }
+
+
+        .welcome p {
+            padding: 22px;
+            background-color: rgb(250, 240, 236);
+        }
+
+        .logo img {
+            width: 66px;
+            height: 77px;
+            position: fixed;
+            right: 0px;
+            bottom: 77px;
+            border-radius: 333%;
+        }
+
+        footer {
+            background-color: aquamarine;
+            padding: 12px;
+        }
+        footer .footer{
+            box-shadow: 9px 9px 7px rgb(164, 118, 118);
+            padding: 22px;
+            background-color: rgb(253, 204, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="searchbox">
+                <input type="text" name="searchbox" id="searchbox" placeholder="search this website">
+            </div>
+        </ul>
+    </header>
+    <div class="boxes">
+        <div class="box1">
+            <h1>I am left box</h1>
+        </div>
+        <div class="box2">
+            <h1>I am right box</h1>
+        </div>
+    </div>
+    <div class="welcome">
+        <h2>Welcome to this sigma Web Development Express</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus sequi laboriosam minima
+            dolorum rem debitis quae laudantium tenetur, in fugiat enim alias architecto eos quam cum perspiciatis ullam
+            optio? Odio vero soluta sequi, recusandae necessitatibus nemo pariatur adipisci voluptatem est ea quis,
+            eligendi deleniti labore cumque ut deserunt nobis quae libero temporibus quibusdam nulla aliquam dignissimos
+            maxime molestias! Minima exercitationem temporibus ad officia, provident, optio ea ullam consequuntur id
+            quam ex nemo doloribus perspiciatis nesciunt impedit cupiditate? Eligendi fugiat laborum quia est labore
+            odit corrupti laboriosam obcaecati, possimus tenetur ab temporibus, explicabo officiis nesciunt natus vel
+            ipsam quidem corporis ipsum quae ad pariatur dolore tempore. Doloribus iure laudantium et magnam repellendus
+            explicabo placeat commodi praesentium, modi recusandae dolore excepturi numquam ad, sapiente quaerat, sunt
+            inventore neque est odio eos harum. Earum odio optio voluptatibus, inventore sit veniam quas autem, mollitia
+            cupiditate eum nobis numquam possimus error quis maiores aspernatur eius voluptatem ipsa adipisci nam
+            distinctio sed labore totam. Repellendus totam dolor ut vel explicabo omnis tempore dicta soluta nemo
+            debitis, obcaecati veritatis maxime repudiandae provident, asperiores beatae ipsum eligendi voluptates! In
+            optio tenetur, et atque aspernatur voluptate porro placeat eligendi odio? Deserunt aut enim praesentium
+            molestiae placeat tempore, maiores dolorum tenetur explicabo? Reiciendis iure adipisci possimus voluptas
+            aperiam consequuntur quo quidem obcaecati ipsam, quia voluptatem atque dolorem soluta eveniet earum.
+            Recusandae quod delectus maiores aperiam excepturi iure possimus, architecto omnis, quam quo, atque
+            perspiciatis provident ea vitae? Amet, eligendi? Ullam optio, sunt corporis modi voluptates doloribus veniam
+            natus quod id blanditiis eveniet commodi nihil at dolorem suscipit cumque quisquam, accusamus libero non
+            placeat harum molestiae tempore! Itaque nam eveniet sequi doloremque facilis temporibus quisquam, sit ullam,
+            possimus voluptas repellat, eaque delectus blanditiis aspernatur totam. Corrupti distinctio odio nemo
+            molestiae, eligendi excepturi ad, autem perferendis iste animi non. Deserunt vel corrupti voluptatem eveniet
+            quam quo ut culpa eaque provident, nam non magnam nisi iusto incidunt veniam, cupiditate perspiciatis soluta
+            error, nulla harum rem dolorem assumenda? Ipsam tenetur eligendi, voluptatem animi dolore consequatur
+            praesentium?
+        </p>
+    </div>
+    <div class="logo">
+        <img src="logo.JPG" alt="">
+    </div>
+    <footer>
+        <div class="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo soluta molestias repudiandae est ipsa
+            totam
+            corrupti eligendi, omnis necessitatibus temporibus harum incidunt iure voluptate officia enim placeat
+            laboriosam
+            quidem perspiciatis! Quos odio expedita aperiam natus pariatur id in fugiat modi. Iusto tempora, facilis
+            earum
+            atque reprehenderit laborum suscipit perferendis culpa dolore cumque animi modi ullam id
+        </div>
+    </footer>
+</body>
+
+</html>
